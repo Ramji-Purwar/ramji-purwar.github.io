@@ -1,8 +1,242 @@
-<html>
-  <head>
-    <title>Ramji Purwar</title>
-  </head>
-  <body>
-    Hi!
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramji Purwar — Portfolio '26</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Ramji Purwar</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="resume.html" class="btn btn-nav">Resume</a>
+        <a href="#contact" class="btn btn-nav btn-filled">Connect</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-text-section">
+        <p class="hero-greeting">Hi! This is</p>
+        <h1 class="hero-name">
+          <span class="char">R</span><span class="char">a</span><span class="char">m</span><span
+            class="char">j</span><span class="char">i</span>
+          <span class="char"> </span>
+          <span class="char">P</span><span class="char">u</span><span class="char">r</span><span
+            class="char">w</span><span class="char">a</span><span class="char">r</span>
+        </h1>
+        <p class="hero-subtitle">Sophomore Undergraduate at IIT Gandhinagar</p>
+        <p class="hero-degree">Computer Science and Engineering</p>
+
+        <div class="hero-actions anim-fade" data-delay="500">
+          <a href="#contact" class="btn-hero btn-filled">Contact Me</a>
+          <div class="hero-socials-inline">
+            <a href="https://www.linkedin.com/in/ramji-purwar-263959318/" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.github.com/Ramji-Purwar" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-section anim-fade" data-delay="400">
+        <div class="hero-photo">
+          <img src="assets/myPhoto.jpg" alt="Ramji Purwar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WORK SHOWCASE ========== -->
+  <section id="work">
+    <div class="section-container">
+      <div class="section-header anim-fade">
+        <h2 class="section-label">Work Showcase</h2>
+        <p class="section-desc">My craft, condensed into the projects I'm proud of!</p>
+      </div>
+
+      <div class="work-grid">
+
+        <div class="work-card anim-slide-up">
+          <div class="work-card-image">
+            <img src="assets/CS-299-SS.png" alt="Attention is NOT Explanation">
+          </div>
+          <div class="work-card-inner">
+            <div class="work-card-content">
+              <h3>Attention is NOT Explanation</h3>
+              <p>An empirical implementation of 'Attention is not Explanation' (Jain &amp; Wallace), testing the
+                faithfulness of attention weights in BiLSTM and DistilBERT models. Features a custom web interface to
+                visualize and evaluate attention mechanisms.</p>
+              <div class="work-card-links">
+                <a href="https://github.com/Ramji-Purwar/CS-299" target="_blank"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card anim-slide-up">
+          <div class="work-card-image">
+            <img src="assets/Yati-Website-SS.png" alt="YATI-Discipline">
+          </div>
+          <div class="work-card-inner">
+            <div class="work-card-content">
+              <h3>YATI-Discipline</h3>
+              <p>Developed a full-stack AI-driven educational platform designed to make learning interactive,
+                personalized, and community-based.</p>
+              <div class="work-card-links">
+                <a href="https://github.com/Ramji-Purwar/Yati-Learning-App" target="_blank"><i
+                    class="fab fa-github"></i> Code</a>
+                <a href="https://yati-discipline.vercel.app/" target="_blank"><i
+                    class="fas fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card anim-slide-up">
+          <div class="work-card-image"
+            style="position: relative; display: flex; align-items: center; justify-content: center; background: #111;">
+            <img src="assets/chess-SS.png" alt="" aria-hidden="true"
+              style="position: absolute; width: 120%; height: 120%; object-fit: cover; filter: blur(15px) brightness(0.6); z-index: 1;">
+            <img src="assets/chess-SS.png" alt="Python Pygame Chess"
+              style="position: relative; z-index: 2; width: auto; height: 85%; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); object-fit: contain;">
+          </div>
+          <div class="work-card-inner">
+            <div class="work-card-content">
+              <h3>Python Pygame Chess</h3>
+              <p>A simple chess game built in Python with a Pygame UI. Features reliable board representation, move
+                validation, position evaluation, and a built-in search engine for computing the best move.</p>
+              <div class="work-card-links">
+                <a href="https://github.com/Ramji-Purwar/chess" target="_blank"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-header anim-fade">
+        <h2 class="section-label">About Me</h2>
+      </div>
+      <div class="about-wrapper">
+        <div class="about-content anim-fade">
+          <p>
+            I've always been fascinated by how Computer Science can help solve very complex problems
+            in mathematics. I'm deeply interested in <strong>Artificial Intelligence</strong> and its
+            involvement in day-to-day life — from smart assistants to recommendation systems.
+          </p>
+          <p>
+            I enjoy <strong>Competitive Programming</strong> and the thrill of crafting elegant,
+            efficient solutions under time pressure. I'm always looking for opportunities to learn,
+            build, and collaborate on projects at the intersection of algorithms, mathematics, and
+            intelligent systems.
+          </p>
+          <p>
+            When I'm not coding, I'm usually exploring new AI research papers, making some open source PRs or tinkering
+            with side projects just for fun.
+          </p>
+          <div class="interest-tags">
+            <span class="tag">AI &amp; ML</span>
+            <span class="tag">Competitive Programming</span>
+            <span class="tag">Open Source</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+
+        <div class="about-image anim-fade">
+          <img src="assets/myPhoto2.jpg" alt="Ramji Purwar">
+        </div>
+      </div>
+
+      <div class="por-header anim-fade">
+        <span
+          style="display:block; font-weight: 600; font-size: 1.1rem; color: var(--text-secondary); text-align: center;">Explore
+          My</span>
+        <h3 class="section-label" style="font-size: 3rem; text-align: center; margin-top: 0.5rem; margin-bottom: 0;">
+          PORs</h3>
+      </div>
+
+      <div class="por-grid anim-fade">
+        <div class="por-box">
+          <div class="por-item">
+            <span class="fa-stack por-icon" style="font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">
+              <i class="fa-solid fa-certificate fa-stack-2x" style="color: var(--text);"></i>
+              <i class="fa-solid fa-check fa-stack-1x fa-inverse"></i>
+            </span>
+            <div class="por-content">
+              <h4>Core Member</h4>
+              <p>GRASP (Competitive Programming Tech Group), IIT Gandhinagar<br><em>Aug 2025 &mdash; Present</em></p>
+            </div>
+          </div>
+        </div>
+        <div class="por-box">
+          <div class="por-item">
+            <span class="fa-stack por-icon" style="font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">
+              <i class="fa-solid fa-certificate fa-stack-2x" style="color: var(--text);"></i>
+              <i class="fa-solid fa-check fa-stack-1x fa-inverse"></i>
+            </span>
+            <div class="por-content">
+              <h4>Webmaster</h4>
+              <p>Student Academic Council<br><em>Jun 2025 &mdash; Present</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT / CTA ========== -->
+  <section id="contact">
+    <div class="section-container">
+      <div class="cta-block anim-fade">
+        <h2>Let's build incredible things together!</h2>
+        <a href="mailto:ramjipurwar48@gmail.com" class="cta-email">ramjipurwar48@gmail.com</a>
+        <div class="cta-socials">
+          <a href="https://www.linkedin.com/in/ramji-purwar-263959318/" target="_blank" aria-label="LinkedIn"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://www.github.com/Ramji-Purwar" target="_blank" aria-label="GitHub"><i
+              class="fab fa-github"></i></a>
+          <a href="mailto:ramjipurwar48@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>&copy; Ramji Purwar, 2026. Built with ♥</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
